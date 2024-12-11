@@ -1,0 +1,147 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "AppService",
+            "id": "injectable-AppService-948b6c0604b84be0d38c07821e1be106e0f105350817c5af1412af2b78df72efb1d63ed6371829a73e8f10f298e2194fe5dd2faf648506e1a5842a5af165df4f",
+            "file": "src/app.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getHello",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 5,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@nestjs/common';\r\n\r\n@Injectable()\r\nexport class AppService {\r\n  getHello(): string {\r\n    return 'Hello World!';\r\n  }\r\n}\r\n",
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-0d9ba7d913e5631b866ecb1a493ce0d597548cdf2ae849fffadf6e6b8955cc1aa1014fad7610f50b9a44a1ce9127c0547e1f0b47caf959b82d32fd3bf867fb52",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { Module } from '@nestjs/common';\r\nimport { AppController } from './app.controller';\r\nimport { AppService } from './app.service';\r\n\r\n@Module({\r\n  imports: [],\r\n  controllers: [AppController],\r\n  providers: [AppService],\r\n})\r\nexport class AppModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "AppService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [],
+        "functions": [
+            {
+                "name": "bootstrap",
+                "file": "src/main.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": []
+            }
+        ],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {},
+        "groupedFunctions": {
+            "src/main.ts": [
+                {
+                    "name": "bootstrap",
+                    "file": "src/main.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": []
+                }
+            ]
+        },
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app.controller.ts",
+                "type": "controller",
+                "linktype": "controller",
+                "name": "AppController",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AppService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/main.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "bootstrap",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
