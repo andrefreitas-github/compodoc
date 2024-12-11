@@ -6,7 +6,12 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  /**
+   * Este é o método getHello
+   * @param greeting mensagem opcional que você pode enviar
+   * @returns A mensagem que você desejar
+   */
+  getHello(greeting?: string): string {
+    return this.appService.getHello(greeting);
   }
 }
