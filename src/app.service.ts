@@ -3,12 +3,13 @@ import { ComplexObj } from './domain/complexObj';
 
 @Injectable()
 export class AppService {
+
   /**
-   * Aqui já é a classe service getHello
-   * @param greeting mensagem opcional
+   * Aqui já é a classe service getHello que recebe um param X
+   * @param greetingWall mensagem opcional
    * @returns
    */
-  getHello(greeting?: string): string {
+  getHello(greetingWall?: string): string {
     return 'Hello World!';
   }
 
