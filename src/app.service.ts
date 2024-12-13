@@ -4,7 +4,7 @@ import { ComplexObj } from './domain/complexObj';
 @Injectable()
 export class AppService {
   /**
-   * Aqui já é a classe service
+   * Aqui já é a classe service getHello
    * @param greeting mensagem opcional
    * @returns
    */
